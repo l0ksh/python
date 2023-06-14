@@ -1,2 +1,2 @@
 # python
-This consits python practice scripts.
+This consists python practice scripts.
