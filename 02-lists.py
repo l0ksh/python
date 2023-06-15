@@ -54,11 +54,32 @@ def main():
     popped_countries = countries.pop()
     print(f'After: {countries}')
     print(f'{popped_countries}')
+    print('\n')
 
+    print('Popping Items from any Position in a List')
+    motorcycles = ['honda', 'yamaha', 'suzuki']
+    print(f'My motorcycles: {motorcycles}')
+    first_owned = motorcycles.pop(1)
+    print(f'First owned bike: {first_owned}')
+    print('\n')
+
+    print('Removing an Item by Value - remove()')
+    motorcycles = ['honda', 'yamaha', 'suzuki', 'ducati']
+    print(motorcycles)
+
+    motorcycles.remove('suzuki')
+    print(motorcycles)
+
+""" Changing, Adding, and Removing Elements
+Most lists you create will be dynamic, meaning you’ll build a list and then add and remove elements from it as your program runs its course. For example, you might create a game in which a player has to shoot aliens out of the sky. You could store the initial set of aliens in a list and then remove an alien from the list each time one is shot down. Each time a new alien appears on the screen, you add it to the list. Your list of aliens will decrease and increase in length throughout the course of the game. """
+
+""" If you’re unsure whether to use the del statement or the pop() method,
+here’s a simple way to decide: when you want to delete an item from a list
+and not use that item in any way, use the del statement; if you want to use an
+item as you remove it, use the pop() method. """
+
+""" Note - The remove() method deletes only the first occurrence of the value you specify. If there's a possibility the value appears more than once in the list, you'll need to use a loop todetermine if all occurrences of the value have been removed."""
 
 if __name__ == "__main__":
     """ This is executed when run from the command line """
     main()
-
-""" Changing, Adding, and Removing Elements
-Most lists you create will be dynamic, meaning you’ll build a list and then add and remove elements from it as your program runs its course. For example, you might create a game in which a player has to shoot aliens out of the sky. You could store the initial set of aliens in a list and then remove an alien from the list each time one is shot down. Each time a new alien appears on the screen, you add it to the list. Your list of aliens will decrease and increase in length throughout the course of the game. """
